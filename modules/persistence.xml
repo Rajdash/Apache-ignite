@@ -17,7 +17,7 @@
                         <property name="persistenceEnabled" value="true"/>
                     </bean>
                 </property>
-                <property name="storagePath" value="/mnt/sda1/opt/data"/>
+                <property name="storagePath" value="/opt/data/ignite"/>
             </bean>
         </property>
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
