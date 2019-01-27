@@ -19,5 +19,6 @@
                 </property>
                 <property name="storagePath" value="/opt/data/ignite"/>
             </bean>
+        </property>
     </bean>
 </beans>
