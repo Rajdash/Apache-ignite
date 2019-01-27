@@ -19,19 +19,5 @@
                 </property>
                 <property name="storagePath" value="/opt/data/ignite"/>
             </bean>
-        </property>
-        <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
-        <property name="discoverySpi">
-            <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
-                <property name="ipFinder">
-                    <!--
-                     Enables Kubernetes IP finder and setting custom namespace name.
-                     -->
-                    <bean class="org.apache.ignite.spi.discovery.tcp.ipfinder.kubernetes.TcpDiscoveryKubernetesIpFinder">
-                        <property name="namespace" value="ignite"/>
-                    </bean>
-                </property>
-            </bean>
-        </property>
     </bean>
 </beans>
